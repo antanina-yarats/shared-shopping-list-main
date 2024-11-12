@@ -1,7 +1,9 @@
 # Shared Shopping List App
 
 ![Screenshot 1](https://cdn.glitch.global/7db13fed-b112-4a52-8c19-56b85f8cb62b/Screenshot%202024-11-12%20at%2013.06.32.png?v=1731409861142)
+
 ![Screenshot 2](https://cdn.glitch.global/7db13fed-b112-4a52-8c19-56b85f8cb62b/Screenshot%202024-11-12%20at%2013.08.02.png?v=1731409878476)
+
 ![Screenshot 3](https://cdn.glitch.global/7db13fed-b112-4a52-8c19-56b85f8cb62b/Screenshot%202024-11-12%20at%2013.09.36.png?v=1731409894198)
 
 ## Overview
