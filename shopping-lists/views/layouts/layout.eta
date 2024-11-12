@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Shared shopping lists</title>
+    <link rel="stylesheet" href="https://unpkg.com/papercss@1.8.1/dist/paper.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">   
+    
+    <style>
+ body {
+    /* Background image from Unsplash*/
+    background-image: url("https://cdn.glitch.global/7db13fed-b112-4a52-8c19-56b85f8cb62b/food.jpeg?v=1730824714740");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.form-wrapper {
+    display: flex;
+    justify-content: center; 
+    width: 100%; 
+    padding: 10px;
+}
+
+.add-list-form, .add-item-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px; /* Set a max width to control the form size */
+    margin: 0 auto; /* Center the form */
+}
+
+.add-list-form input[type="text"], .add-item-form input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.add-list-form input[type="submit"], .add-item-form input[type="submit"] {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-list-form input[type="submit"]:hover, .add-item-form input[type="submit"]:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+
+.ulListWrapper, .ulItemWrapper {
+    width: 100%;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for each list item */
+.listItem, .itemItem {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.itemName {
+    flex: 1;  
+}
+
+/* Styling buttons within the item and list forms */
+.listForm input[type="submit"], .itemList input[type="submit"] {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.listForm input[type="submit"]:hover, .itemList input[type="submit"]:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 500px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container paper">
+      <%~ it.body %>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<% layout("./layouts/layout.eta") %>
+
+<p><a href="/lists">Back to shopping lists</a></p>
+
+<h1><%= it.shoppingList.name %></h1> 
+
+
+
+<h2>ADD ITEM</h2>
+
+<div class="form-wrapper"">
+
+<form method="POST" action="/lists/<%= it.shoppingList.id %>/items" class="add-item-form"> 
+    <input type="text" placeholder="Type shopping item here.." name="name" required />
+    <input type="submit" value="ADD" />
+</form>
+
+</div>
+
+<h2>Shopping items</h2>
+
+<div class="ulItemWrapper">
+
+<ul>
+<% it.shoppingItems.forEach((item) => { %>
+    <li class="itemItem">
+        <span class="itemName">
+            <% if (!item.collected) { %>
+                <%= item.name %>
+            <% } else { %>
+                <del><%= item.name %></del>
+            <% } %>
+        </span>
+        <% if (!item.collected) { %>
+            <form method="POST" action="/lists/<%= it.shoppingList.id %>/items/<%= item.id %>/collected" class="itemList">
+                <input type="submit" value="Mark collected!" />
+            </form>
+        <% } %>
+    </li>
+<% }); %>
+</ul>
+
+
+</div>

@@ -1,0 +1,46 @@
+<% layout("./layouts/layout.eta") %>
+
+
+<p><a href="/">Home</a></p>
+
+
+<h1>Shopping lists</h1>
+
+
+<h3>ADD YOUR SHOPPING LIST</h3>
+
+<div class="form-wrapper"">
+
+<form method="POST" action="/lists" class="add-list-form">
+
+<input type="text" placeholder="Type your list name.." name="name" required />
+
+<input type="submit" value="ADD"/>
+
+</form>
+
+</div>
+
+
+  <h2>Your lists: </h2>
+
+<div class="ulListWrapper">
+
+<ul>
+
+
+<% it.shoppingLists.forEach((list)=> { %>
+
+    <li class="listItem">
+    <a href="/lists/<%=list.id%>"><%=list.name%></a>
+    <form method="POST" action="/lists/<%=list.id%>/deactivate" class="listForm">
+    <input type="submit" value="Deactivate list!"/>
+    </form>
+    </li>
+    
+<% }); %>
+
+</ul>
+
+</div>
+
