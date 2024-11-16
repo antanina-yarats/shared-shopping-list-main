@@ -30,3 +30,7 @@ The project is built with JavaScript, Deno, Docker, Docker Compose, PostgreSQL, 
    ```bash
    git clone https://github.com/your-username/shared-shopping-list.git
    cd shared-shopping-list
+
+## Project on Render.com
+
+https://shared-shopping-list-main.onrender.com/
