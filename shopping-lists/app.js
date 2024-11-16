@@ -6,7 +6,7 @@ import * as requestUtils from "./utils/requestUtils.js"
 
 
 configure({
-    views: `${Deno.cwd()}/views/`,
+    views: `${Deno.cwd()}/shopping-lists/views/`,
 });
 
 const handleRequest = async (request) => {
