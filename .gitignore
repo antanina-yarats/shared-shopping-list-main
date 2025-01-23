@@ -1,3 +1,11 @@
 app-cache/deps/**
 app-cache/gen/**
-/project.env
+
+
+# Ignore all environment files
+*.env
+
+# Specific ignore for the project.env file
+project.env
+shopping-lists/project.env
+
